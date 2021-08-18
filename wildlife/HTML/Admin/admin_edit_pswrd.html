@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/admin_employee.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li class="ele">
+                    <a href="./admin_cover.html">Home</a>
+                </li>
+                <li class="ele">
+                    <a href="./admin_profile.php">Projects</a>
+                </li>
+                <li class="ele">
+                    <a href="../../php/session_end.php">Logout</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="profile-info">
+            <div class="inbox info">
+                <div class="change">
+                    <div class="edit_pswrd">
+                        <form method="post" action="../../php/editp.php" class="edit_pwd">
+                            <div class="form">
+                                <input type="text" name="O_password" autocomplete="off" required />
+                                <label for="O_password" class="label-name">
+                    <span class="content-name">Old password :</span>
+                  </label>
+                            </div>
+                            <br />
+                            <div class="form">
+                                <input type="text" name="N_password" autocomplete="off" required />
+                                <label for="N_password" class="label-name">
+                    <span class="content-name">New password :</span>
+                  </label>
+                            </div>
+                            <br />
+                            <div class="login">
+                                <input type="submit" value="submit" id="submit" class="btn btn-full" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

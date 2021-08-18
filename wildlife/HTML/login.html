@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="home">
+            <a href="../index.html" class="home-redirect">
+                <i class="material-icons">home</i>
+            </a>
+        </div>
+        <form method="POST" action="../php/LoginCheck.php" class="login">
+            <div class="form">
+                <input type="text" name="user" autocomplete="off" required />
+                <label for="user" class="label-name">
+            <span class="content-name">UserName :</span>
+          </label>
+            </div>
+            <br />
+            <div class="form">
+                <input type="password" name="password" autocomplete="off" required />
+                <label for="password" class="label-name">
+            <span class="content-name">Password :</span>
+          </label>
+            </div>
+            <br />
+            <br />
+            <div class="forgot">
+                <a href="./login.html" id="forgot">Refresh</a>
+            </div>
+            <br />
+            <div class="select">
+                <input type="radio" name="tou" id="user" value="employee" />
+                <span class="info">employee</span>
+                <input type="radio" name="tou" id="employee" value="admin" />
+                <span class="info">admin</span>
+            </div>
+            <br />
+            <div class="login">
+                <input type="submit" value="Login" id="submit" class="btn btn-full" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

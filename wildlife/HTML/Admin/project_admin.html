@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/admin_employee.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li class="ele">
+                    <a href="./admin_cover.html">Home</a>
+                </li>
+                <li class="ele">
+                    <a href="./admin_profile.php">Profile</a>
+                </li>
+                <li class="ele">
+                    <a href="../../php/session_end.php">Logout</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="profile-info">
+            <div class="inbox info">
+                <div class="display">
+                    <form method="POST" action="../../php/pro_ad.php" class="login">
+                        <div class="form">
+                            <input type="text" name="proj-id" autocomplete="off" required />
+                            <label for="proj-id" class="label-name">
+                  <span class="content-name">Proj ID :</span>
+                </label>
+                        </div>
+                        <br />
+                        <div class="form">
+                            <input type="text" name="proj-name" autocomplete="off" required />
+                            <label for="proj-name" class="label-name">
+                  <span class="content-name">Proj Name :</span>
+                </label>
+                        </div>
+                        <br />
+                        <div class="form">
+                            <input type="text" name="manager-id" autocomplete="off" required />
+                            <label for="manager-id" class="label-name">
+                  <span class="content-name">Manager Id :</span>
+                </label>
+                        </div>
+                        <br />
+                        <div class="form">
+                            <input type="number" name="funds" autocomplete="off" required />
+                            <label for="funds" class="label-name">
+                  <span class="content-name">Funds :</span>
+                </label>
+                        </div>
+                        <br />
+                        <div class="form">
+                            <input type="date" name="due" min="2020-05-01" autocomplete="off" required />
+                            <label for="due" class="label-name">
+                  <span class="content-name date">Due Date :</span>
+                </label>
+                        </div>
+                        <br />
+                        <div class="login">
+                            <input type="submit" value="Add" id="submit" class="btn btn-full" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>
